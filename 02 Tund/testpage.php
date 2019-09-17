@@ -5,7 +5,16 @@
   $partOfDay = "hägune aeg";
   
   if($hourNow < 8){
-  $partOfDay = "hommik";
+  $partOfDay = "Hommik";
+  }
+  if($hourNow > 20){ 
+  $partOfDay = "Öö";
+  }
+  if($hourNow >= 12 and $hourNow < 17){
+  $partOfDay = "Päev";
+  }
+  if($hourNow >= 17 and $hourNow < 20){
+  $partOfDay = "Õhtu";
   }
 ?>
 <!DOCTYPE html>
